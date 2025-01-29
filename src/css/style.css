@@ -58,9 +58,9 @@ main {
 }
 
 .correct {
-    background-color: lightgray;
+    background-color: var(--color-text-green);
 }
 
 .incorrect {
-    background-color: red;
+    background-color: var(--color-text-error);
 }

@@ -1,6 +1,7 @@
 import stepsForSoftwareProject from "./stepsData";
 import shuffleArray from "./shuffleArray";
 import handleDragAndDrop from "./dragAndDrop";
+import compareOrder from "./compareOrder";
 
 const createListItems = () => {
   const list = document.querySelector(".list");
@@ -11,7 +12,7 @@ const createListItems = () => {
   shuffledArray.forEach((step, index) => {
     const listItem = document.createElement("li");
     list.append(listItem);
-    listItem.textContent = `${index + 1}. ${step} `;
+    listItem.textContent = `${index + 1}.${step}`;
     listItem.classList.add("list__item");
     listItem.setAttribute("draggable", true);
     listItem.setAttribute("data-index", index);
@@ -21,7 +22,7 @@ const createListItems = () => {
   compareButton.textContent = "Check order";
   compareButton.classList.add("list__compare-button");
 
-  //   compareButton.addEventListener("click", compareOrder);
+  compareButton.addEventListener("click", compareOrder);
   handleDragAndDrop();
 };
 
