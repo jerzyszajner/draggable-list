@@ -7,6 +7,11 @@ body {
 .header {
     width: 100%;
     padding: 0 var(--spacing-large);
+    text-align: center;
+}
+
+.header__title {
+    margin-bottom: 10px;
 }
 
 .header__description {
